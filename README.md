@@ -1,7 +1,8 @@
 
 # Vicinity Set Cover Analysis for Protein-Coding Genes
 
-This notebook provides a solution to the *vicinity set cover problem* using protein-coding genes on a specified chromosome. It identifies a minimal set of reference genes whose surrounding genes (within a given genomic distance) collectively cover the entire set of genes on that chromosome.
+This notebook provides a solution to the *vicinity set cover problem* using all protein-coding genes in the human genome. It identifies a minimal set of reference genes whose vicinities (defined by a given threshold) collectively cover the entire genome.
+For simplicity and demonstration purposes, the algorithm has been set up to process each chromosome individually. (e.g., solve the vicinity set cover problem using only genes on chromosome 1.)
 
 ## 🔧 How It Works
 
@@ -12,7 +13,7 @@ main(threshold, chromosome)
 - Loads protein-coding gene data from a `protein2_full.pkl` file.
 - Filters genes by the specified chromosome.
 - Uses the given threshold (in base pairs) to determine gene neighborhoods (vicinities).
-- Solves the vicinity set cover problem to select the minimal set of reference genes that cover all others through their vicinities.
+- Solves the vicinity set cover problem to select the minimal set of reference genes that cover the genome.
 
 ## ▶️ Example Usage
 
@@ -37,7 +38,8 @@ This will output:
 ## 📁 Requirements
 
 - A file named `protein2_full.pkl` containing gene data in a dictionary format.
-- Implementations of `get_sets()` and `solve_gene()` must be available in the notebook.
+- Run the cell that imports the necessary libraries.
+- Run the preceeding cells that define the required functions.
 
 ## 💡 Notes
 
