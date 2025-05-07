@@ -1,5 +1,5 @@
 
-# Vicinity Set Cover Analysis for Protein-Coding Genes
+# Vicinity Set Cover Algorithm for solving reference genes in the human genome
 
 This notebook provides a solution to the *vicinity set cover problem* using all protein-coding genes in the human genome. It identifies a minimal set of reference genes whose vicinities (defined by a given threshold) collectively cover the entire genome.
 For simplicity and demonstration purposes, the algorithm has been set up to process each chromosome individually. (e.g., solve the vicinity set cover problem using only genes on chromosome 1.)
